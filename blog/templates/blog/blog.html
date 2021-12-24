@@ -1,0 +1,7 @@
+{% extends "blog/base.html" %} {% block content %} {% for post in posts %}
+<h1>{{ post.title }}</h1>
+<h2>{{ post.content }}</h2>
+<h2>{{ post.date_posted|date:"F d, Y" }}</h2>
+<!-- see django date doc. -->
+<h2>{{ post.author }}</h2>
+{% endfor %} {% endblock content %}
