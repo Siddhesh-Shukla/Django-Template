@@ -3,8 +3,8 @@
   <form method="POST">
     {% csrf_token %}
     <fieldset>{{ form|crispy }}</fieldset>
-    <button type="submit">Sign Up</button>
+    <button type="submit">Login</button>
   </form>
 </div>
-Already have an account ? <a href="{% url 'login' %}">Sign In</a>
+Need an account ? <a href="{% url 'register' %}">Sign Un</a>
 {% endblock content %}
