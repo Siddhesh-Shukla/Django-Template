@@ -2,6 +2,7 @@
 
 <div>
   <h1><a href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h1>
+  <img src="{{ post.author.profile.image.url }}" style="width: 50px" />
   <p>{{ post.content }}</p>
   <a>{{ post.date_posted|date:"F d, Y" }}, </a>
   <!-- see django date doc. -->
