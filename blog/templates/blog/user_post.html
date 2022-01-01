@@ -1,4 +1,8 @@
-{% extends "blog/base.html" %} {% block content %} {% for post in posts %}
+{% extends "blog/base.html" %} {% block content %}
+
+<h1>Post By: {{ view.kwargs.username }} | {{ page_obj.paginator.count }} </h1>
+
+{% for post in posts %}
 
 <div>
   <h1><a href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h1>
