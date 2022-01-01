@@ -1,2 +1,2 @@
 ## Django-Template  
-## <i>template for future projects in</i> **Django**
+> ## <i>template for future __Django__ projects</i> 
