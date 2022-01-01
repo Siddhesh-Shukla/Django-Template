@@ -1,1 +1,1 @@
-# Django-Template
+# Django-Template >> template for future projects
